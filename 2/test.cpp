@@ -84,10 +84,10 @@ SUITE(DecryptText)
         CHECK_THROW(dec(5," "),cipher_error);
     }
     TEST(TextNumberText) {
-        CHECK_THROW(dec(5,"SHBR234ET"),cipher_error);
+        CHECK_THROW(dec(5,"QWER777TY"),cipher_error);
     }
     TEST(TextSymbolText) {
-        CHECK_THROW(dec(5,"SBER!!!HT"),cipher_error);
+        CHECK_THROW(dec(5,"QWER???TY"),cipher_error);
     }
 
 }
