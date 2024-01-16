@@ -29,11 +29,9 @@ int main()
 {
     locale loc("ru_RU.UTF-8");
     locale::global(loc);
-    check(L"ГРАНТА", L"ЛАДА");
-    check(L"КВ-2", L"");
-    check(L"СИЛА", L"ОТЭЦ666");
-    check(L"ПРИОРА", L"Лада");
-    check(L"1234", L"ЛАДА");
-    check(L"С и л а", L"ОТЭЦ");
-    check(L"@#$", L"ТАНК");
+    check("THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG","0");
+    check("THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG","");
+    check("THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG","5");
+    check("thequikbrownfoxjumpsovertherlazyDOG","5");
+    check("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG","100");
 }
